@@ -1,10 +1,7 @@
 # promise-socket
 
-<!-- markdownlint-disable MD013 -->
-
-[![Build Status](https://secure.travis-ci.org/dex4er/js-promise-socket.svg)](http://travis-ci.org/dex4er/js-promise-socket) [![Coverage Status](https://coveralls.io/repos/github/dex4er/js-promise-socket/badge.svg)](https://coveralls.io/github/dex4er/js-promise-socket) [![npm](https://img.shields.io/npm/v/promise-socket.svg)](https://www.npmjs.com/package/promise-socket)
-
-<!-- markdownlint-enable MD013 -->
+This is a fork from
+[promise-socket](https://github.com/dex4er/js-promise-socket) by Piotr Roszatycki!
 
 This module allows to convert
 [`net.Socket`](https://nodejs.org/api/net.html#net_class_net_socket) stream into
@@ -14,26 +11,26 @@ object fulfilled when stream"s events occurred.
 
 ## Requirements
 
-This module requires Node >= 6.
+This module requires Node >= 18.
 
 ## Installation
 
 ```shell
-npm install promise-socket
+npm install @serban.marti/promise-socket
 ```
 
 ## Usage
 
 ```js
-const {PromiseSocket, TimeoutError} = require("promise-socket")
+const {PromiseSocket, TimeoutError} = require("@serban.marti/promise-socket")
 ```
 
 _Typescript_:
 
 ```ts
-import {PromiseSocket, TimeoutError} from "promise-socket"
+import {PromiseSocket, TimeoutError} from "@serban.marti/promise-socket"
 // or
-import PromiseSocket from "promise-socket"
+import PromiseSocket from "@serban.marti/promise-socket"
 ```
 
 ### constructor
@@ -50,7 +47,7 @@ _Example:_
 
 ```js
 const net = require("net")
-const {PromiseSocket} = require("promise-socket")
+const {PromiseSocket} = require("@serban.marti/promise-socket")
 
 const socket = new net.Socket()
 
@@ -61,7 +58,7 @@ _Typescript:_
 
 ```ts
 import net from "net"
-import PromiseSocket from "promise-socket"
+import PromiseSocket from "@serban.marti/promise-socket"
 
 const socket = new net.Socket()
 
@@ -236,7 +233,5 @@ This is an error class that is used when timeout occured after using
 [`PromisePiping`](https://www.npmjs.com/package/promise-piping).
 
 ## License
-
-Copyright (c) 2017-2019 Piotr Roszatycki <mailto:piotr.roszatycki@gmail.com>
 
 [MIT](https://opensource.org/licenses/MIT)

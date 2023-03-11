@@ -1,7 +1,7 @@
 /// <reference types="node" />
 
 import * as net from "net"
-import {PromiseDuplex} from "promise-duplex"
+import {PromiseDuplex} from "@serban.marti/promise-duplex"
 
 import {TimeoutError} from "./timeout-error"
 
